@@ -2,36 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: "fontawesome";
-  src: url("fonts/fontawesome-webfont.eot");
-  src: local("☺"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg") format("svg");
+  src: url("../Fonts/fontawesome-webfon.eot");
+  src: local("☺"), url("../Fonts/fontawesome-webfon.woff") format("woff"), url("../Fonts/fontawesome-webfon.ttf") format("truetype"), url("../Fonts/fontawesome-webfon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MYRIADPRO";
-  src: url("fonts/MYRIADPRO-REGULAR.eot");
-  src: local("☺"), url("fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("fonts/MYRIADPRO-REGULAR.ttf") format("truetype"), url("fonts/MYRIADPRO-REGULAR.svg") format("svg");
+  src: url("../Fonts/MYRIADPRO-REGULAR.eot");
+  src: local("☺"), url("../Fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("../Fonts/MYRIADPRO-REGULAR.ttf") format("truetype"), url("../Fonts/MYRIADPRO-REGULAR.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham-Book.eot");
-  src: local("☺"), url("fonts/Gotham-Book.woff") format("woff"), url("fonts/Gotham-Book.ttf") format("truetype"), url("fonts/Gotham-Book.svg") format("svg");
+  src: url("../Fonts/Gotham-Book.eot");
+  src: local("☺"), url("../Fonts/Gotham-Book.woff") format("woff"), url("../Fonts/Gotham-Book.ttf") format("truetype"), url("../Fonts/Gotham-Book.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham-Medium.eot");
-  src: local("☺"), url("fonts/Gotham-Medium.woff") format("woff"), url("fonts/Gotham-Medium.ttf") format("truetype"), url("fonts/Gotham-Medium.svg") format("svg");
+  src: url("../Fonts/Gotham-Medium.eot");
+  src: local("☺"), url("../Fonts/Gotham-Medium.woff") format("woff"), url("../Fonts/Gotham-Medium.ttf") format("truetype"), url("../Fonts/Gotham-Medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham-Bold.eot");
-  src: local("☺"), url("fonts/Gotham-Bold.woff") format("woff"), url("fonts/Gotham-Bold.ttf") format("truetype"), url("fonts/Gotham-Bold.svg") format("svg");
+  src: url("../Fonts/Gotham-Bold.eot");
+  src: local("☺"), url("../Fonts/Gotham-Bold.woff") format("woff"), url("../Fonts/Gotham-Bold.ttf") format("truetype"), url("../Fonts/Gotham-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -106,18 +106,6 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
-}
-
-div {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-}
-div p {
-  margin: 0px 0px 30px 0;
-}
-div .text {
-  font-family: "Gotham";
 }
 
 /*# sourceMappingURL=styles.css.map */
