@@ -1,0 +1,24 @@
+@import "variables";
+
+//это первый проект из без очертания блоков тяжело ....
+//и очертания то нужны то нет будет глобальная переменная
+//исходя из которой будут линии или нет
+@mixin showBorderBlock($width, $style, $color){
+  @if ($isShowBorderBlock == 1) {
+    border: $width $style $color;
+  }
+}
+
+@mixin posLogoHeader($x, $y) {
+  $y: $y - 25;
+  padding: $y+15 0px 0px $x+10;
+  width: 85px;
+  background: url('../img/header/logo/Rectangle9copy.jpg') $x $y no-repeat, url('../img/header/logo/Rectangle9.png') $x+12 $y+9 no-repeat;
+  //text-align: center;
+
+  font-size: 38.349px;
+  font-family: "Open Sans";
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  text-transform: uppercase;
+}

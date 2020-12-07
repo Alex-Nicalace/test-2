@@ -4,9 +4,108 @@
 //Файл обнуляющих стилей
 @import "nullstyle";
 
-.intro{
-  //height: 800px;
-  //background-image: url("../img/background/1.jpg");
+//@import "all.min";
+
+@import "mixins";
+
+//@import "variables";
+
+body {
+  max-width: 1600px;
+  margin: 0px auto; //такое сочетание дает оцентровку
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-image: url("../img/header/background/desktop.jpg");
+  background-repeat: no-repeat;
+  @include showBorderBlock(1px, solid, red);
+  height: 880px;
+}
+.header__underLine {
+  border-bottom: 2px solid #3b3a38;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0px auto; //такое сочетание дает оцентровку
+  //@include showBorderBlock(1px, solid, red);
+  @include showBorderBlock(1px, solid, red);
+}
+
+.header__row {
+  display: flex;
+  //height: 116px;
+}
+
+.header__logo {
+  @include posLogoHeader(0px, $HeaderPaddingTop);
+  @include showBorderBlock(1px, solid, red)
+}
+
+.header__nav {
+  @include showBorderBlock(1px, solid, red);
+  flex: 1 1 auto;
+  //padding: $HeaderPaddingTop 0;
+  margin-left: 200px;
+}
+
+.header__navList {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  //padding-top: 55px;
+  display: flex;
+  justify-content: space-around;
+  padding: $HeaderPaddingTop 0;
+  li{
+    @include showBorderBlock(1px, solid, green);
+    //padding: $HeaderPaddingTop 0;
+    //flex-basis: 150px;
+    //width: 200px;
+  }
+
+  a{
+    @include showBorderBlock(1px, solid, red);
+    padding: $HeaderPaddingTop 0;
+  }
+
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    border-bottom: 6px solid #11749e;
+  }
+}
+
+.header__socialIcon {
+  @include showBorderBlock(1px, solid, red);
+  padding: $HeaderPaddingTop 0;
+  width: 145px;
+}
+
+.header__socialIconList {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(245, 245, 245);
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  a:visited {
+    color: rgb(245, 245, 245);
+  }
+
+}
+
 
 
