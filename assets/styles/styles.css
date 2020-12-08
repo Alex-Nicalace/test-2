@@ -5405,25 +5405,22 @@ body {
   flex-direction: column;
 }
 
-.header {
-  background-image: url("../img/header/background/desktop.jpg");
-  background-repeat: no-repeat;
-  height: 880px;
-}
-
-.header__underLine {
-  border-bottom: 2px solid #3b3a38;
-}
-
 .container {
   max-width: 1170px;
   margin: 0px auto;
 }
 
+.header {
+  background-image: url("../img/header/background/desktop.jpg");
+  background-repeat: no-repeat;
+  height: 880px;
+}
+.header__underLine {
+  border-bottom: 2px solid #3b3a38;
+}
 .header__row {
   display: flex;
 }
-
 .header__logo {
   padding: 36px 0px 0px 10px;
   width: 85px;
@@ -5434,12 +5431,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .header__nav {
   flex: 1 1 auto;
   margin-left: 200px;
 }
-
 .header__navList {
   font-size: 20px;
   font-family: "Myriad Pro";
@@ -5448,10 +5443,12 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-around;
+}
+.header__navList li {
   padding: 46px 0;
 }
 .header__navList a {
-  padding: 46px 0;
+  padding: 46px 0px;
 }
 .header__navList a:visited {
   color: white;
@@ -5459,12 +5456,10 @@ body {
 .header__navList a:hover {
   border-bottom: 6px solid #11749e;
 }
-
 .header__socialIcon {
   padding: 46px 0;
   width: 145px;
 }
-
 .header__socialIconList {
   display: flex;
   justify-content: space-between;
@@ -5476,6 +5471,47 @@ body {
 }
 .header__socialIconList a:visited {
   color: whitesmoke;
+}
+.header__creative {
+  padding: 250px 0 0;
+  text-align: center;
+  font-size: 143px;
+  font-family: "Gotham";
+  color: whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header__power {
+  padding: 20px 0 0;
+  font-size: 30px;
+  font-family: "Gotham";
+  color: #11749e;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 15px;
+  text-align: center;
+}
+.header__scroll {
+  text-align: center;
+}
+.header__scrollTitle {
+  padding: 116px 0px 22px;
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: white;
+}
+.header__scrollBtn {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "FontAwesome";
+  color: whitesmoke;
+  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  margin: 0 555px;
+  line-height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
