@@ -30,7 +30,6 @@
 @mixin scrollBtn($side){
   width: $side;
   height: $side;
-  margin: 0 ($containerWidth - $side)/2;
   line-height: $side;
   border: 1px solid white;
   border-radius: 50%;

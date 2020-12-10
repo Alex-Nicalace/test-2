@@ -28,8 +28,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/header/background/desktop.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
   @include showBorderBlock(1px, solid, red);
   height: 880px;
 
@@ -167,11 +166,161 @@ body {
     color: rgb(245, 245, 245);
     text-transform: uppercase;
     @include scrollBtn(60px);
+    margin: 0px auto; //такое сочетание дает оцентровку
   }
 }
 
 
+.aboutAgency {
+  @include showBorderBlock(1px, solid, red);
+  background-color: #11749e;
+  padding-bottom: 130px;
 
+  &__heading {
+    @include showBorderBlock(1px, solid, green);
+    position: relative;
+  }
 
+  &__headingCh {
+    @include showBorderBlock(1px, solid, green);
+    //font-size: 30px;
+    font-size: 250px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.18);
+    font-weight: bold;
+    text-align: center;
+    //-moz-transform: matrix( 8.23928436410974,0,0,8.23928436410975,0,0);
+    //-webkit-transform: matrix( 8.23928436410974,0,0,8.23928436410975,0,0);
+    //-ms-transform: matrix( 8.23928436410974,0,0,8.23928436410975,0,0);
+  }
 
+  &__headingTitle {
+    @include showBorderBlock(1px, solid, white);
+    position: absolute;
+    top: 130px;
+    left: $containerWidth/2;
+    //padding: 0 400px;
+    font-size: 30px;
+    font-family: "Gotham";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    //-moz-transform: matrix( 1.87750648589851,0,0,1.87750648589851,0,0);
+    //-webkit-transform: matrix( 1.87750648589851,0,0,1.87750648589851,0,0);
+    //-ms-transform: matrix( 1.87750648589851,0,0,1.87750648589851,0,0);
+  }
 
+  &__row {
+    @include showBorderBlock(1px, solid, white);
+    display: flex;
+  }
+
+  &__column {
+    @include showBorderBlock(1px, solid, red);
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  &__column:last-child {
+    margin-right: 0px;
+  }
+
+  &__columnIcon {
+    @include showBorderBlock(1px, solid, yellow);
+
+    //@include scrollBtn(60px);
+    //margin: 0px auto; //такое сочетание дает оцентровку
+    //border-radius: 50%;
+  }
+
+  &__columnTitle {
+    @include showBorderBlock(1px, solid, red);
+
+    font-size: 18px;
+    font-family: "Gotham";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2;
+  }
+
+  &__columnText {
+    @include showBorderBlock(1px, solid, white);
+
+    font-size: 15px;
+    font-family: "Gotham";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+  }
+}
+
+.news {
+  @include showBorderBlock(1px, solid, red);
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    @include showBorderBlock(1px, solid, red);
+    flex: 1 1 750px;
+    padding: 70px 0 0 0;
+  }
+
+  &__item-date {
+    font-size: 13px;
+    font-family: "Gotham";
+    //color: rgb(255, 255, 255);
+    line-height: 1.846;
+    text-align: left;
+  }
+
+  &__item-title {
+    font-size: 25px;
+    font-family: "Gotham";
+    //color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.44;
+    text-align: left;
+    padding: 10px 0 30px 0;
+  }
+
+  &__item-text {
+    font-size: 15px;
+    font-family: "Gotham";
+    //color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: left;
+
+    p{
+      padding-bottom: 35px;
+    }
+
+    p:last-child{
+      padding-bottom: 0px;
+    }
+  }
+
+  &__item-img {
+    flex: 0 0 750px;
+  }
+
+  &__item_1 {
+    @include showBorderBlock(1px, solid, green);
+    padding-left: ($pageWidth - $containerWidth)/2;
+    padding-right: 110px;
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+  }
+
+  &__item_4 {
+    @include showBorderBlock(1px, solid, green);
+    padding-left: 110px;
+    padding-right: ($pageWidth - $containerWidth)/2;
+    background-color: #f3f3f3;
+    color: rgb(34, 34, 34);
+  }
+
+}

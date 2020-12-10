@@ -5408,11 +5408,12 @@ body {
 .container {
   max-width: 1170px;
   margin: 0px auto;
+  border: 1px solid red;
 }
 
 .header {
-  background-image: url("../img/header/background/desktop.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
+  border: 1px solid red;
   height: 880px;
 }
 .header__underLine {
@@ -5430,12 +5431,15 @@ body {
   color: whitesmoke;
   font-weight: bold;
   text-transform: uppercase;
+  border: 1px solid red;
 }
 .header__nav {
+  border: 1px solid red;
   flex: 1 1 auto;
   margin-left: 200px;
 }
 .header__navList {
+  border: 1px solid white;
   font-size: 20px;
   font-family: "Myriad Pro";
   color: white;
@@ -5445,9 +5449,11 @@ body {
   justify-content: space-around;
 }
 .header__navList li {
+  border: 1px solid green;
   padding: 46px 0;
 }
 .header__navList a {
+  border: 1px solid red;
   padding: 46px 0px;
 }
 .header__navList a:visited {
@@ -5457,10 +5463,12 @@ body {
   border-bottom: 6px solid #11749e;
 }
 .header__socialIcon {
+  border: 1px solid red;
   padding: 46px 0;
   width: 145px;
 }
 .header__socialIconList {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -5473,6 +5481,7 @@ body {
   color: whitesmoke;
 }
 .header__creative {
+  border: 1px solid white;
   padding: 250px 0 0;
   text-align: center;
   font-size: 143px;
@@ -5482,6 +5491,7 @@ body {
   text-transform: uppercase;
 }
 .header__power {
+  border: 1px solid green;
   padding: 20px 0 0;
   font-size: 30px;
   font-family: "Gotham";
@@ -5492,15 +5502,18 @@ body {
   text-align: center;
 }
 .header__scroll {
+  border: 1px solid green;
   text-align: center;
 }
 .header__scrollTitle {
+  border: 1px solid red;
   padding: 116px 0px 22px;
   font-size: 13px;
   font-family: "OpenSans";
   color: white;
 }
 .header__scrollBtn {
+  border: 1px solid white;
   font-size: 30px;
   font-weight: bold;
   font-family: "FontAwesome";
@@ -5508,10 +5521,126 @@ body {
   text-transform: uppercase;
   width: 60px;
   height: 60px;
-  margin: 0 555px;
   line-height: 60px;
   border: 1px solid white;
   border-radius: 50%;
+  margin: 0px auto;
+}
+
+.aboutAgency {
+  border: 1px solid red;
+  background-color: #11749e;
+  padding-bottom: 130px;
+}
+.aboutAgency__heading {
+  border: 1px solid green;
+  position: relative;
+}
+.aboutAgency__headingCh {
+  border: 1px solid green;
+  font-size: 250px;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.18);
+  font-weight: bold;
+  text-align: center;
+}
+.aboutAgency__headingTitle {
+  border: 1px solid white;
+  position: absolute;
+  top: 130px;
+  left: 585px;
+  font-size: 30px;
+  font-family: "Gotham";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.aboutAgency__row {
+  border: 1px solid white;
+  display: flex;
+}
+.aboutAgency__column {
+  border: 1px solid red;
+  text-align: center;
+  margin-right: 30px;
+}
+.aboutAgency__column:last-child {
+  margin-right: 0px;
+}
+.aboutAgency__columnIcon {
+  border: 1px solid yellow;
+}
+.aboutAgency__columnTitle {
+  border: 1px solid red;
+  font-size: 18px;
+  font-family: "Gotham";
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.aboutAgency__columnText {
+  border: 1px solid white;
+  font-size: 15px;
+  font-family: "Gotham";
+  color: white;
+  line-height: 1.6;
+}
+
+.news {
+  border: 1px solid red;
+}
+.news__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news__item {
+  border: 1px solid red;
+  flex: 1 1 750px;
+  padding: 70px 0 0 0;
+}
+.news__item-date {
+  font-size: 13px;
+  font-family: "Gotham";
+  line-height: 1.846;
+  text-align: left;
+}
+.news__item-title {
+  font-size: 25px;
+  font-family: "Gotham";
+  text-transform: uppercase;
+  line-height: 1.44;
+  text-align: left;
+  padding: 10px 0 30px 0;
+}
+.news__item-text {
+  font-size: 15px;
+  font-family: "Gotham";
+  line-height: 1.6;
+  text-align: left;
+}
+.news__item-text p {
+  padding-bottom: 35px;
+}
+.news__item-text p:last-child {
+  padding-bottom: 0px;
+}
+.news__item-img {
+  flex: 0 0 750px;
+}
+.news__item_1 {
+  border: 1px solid green;
+  padding-left: 215px;
+  padding-right: 110px;
+  background-color: #222222;
+  color: white;
+}
+.news__item_4 {
+  border: 1px solid green;
+  padding-left: 110px;
+  padding-right: 215px;
+  background-color: #f3f3f3;
+  color: #222222;
 }
 
 /*# sourceMappingURL=styles.css.map */
