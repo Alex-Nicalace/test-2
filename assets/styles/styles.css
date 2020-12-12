@@ -5411,6 +5411,21 @@ body {
   border: 1px solid red;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 750px;
+  }
+}
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
   border: 1px solid red;
@@ -5436,7 +5451,7 @@ body {
 .header__nav {
   border: 1px solid red;
   flex: 1 1 auto;
-  margin-left: 200px;
+  margin-left: 14.3em;
 }
 .header__navList {
   border: 1px solid white;
@@ -5531,6 +5546,7 @@ body {
   border: 1px solid red;
   background-color: #11749e;
   padding-bottom: 130px;
+  padding-top: 90px;
 }
 .aboutAgency__heading {
   border: 1px solid green;
@@ -5538,30 +5554,21 @@ body {
 }
 .aboutAgency__headingCh {
   border: 1px solid green;
-  font-size: 250px;
-  font-family: "Roboto";
   color: rgba(255, 255, 255, 0.18);
-  font-weight: bold;
-  text-align: center;
 }
 .aboutAgency__headingTitle {
   border: 1px solid white;
-  position: absolute;
-  top: 130px;
-  left: 585px;
-  font-size: 30px;
-  font-family: "Gotham";
+  left: 350px;
   color: white;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
 }
 .aboutAgency__row {
   border: 1px solid white;
   display: flex;
+  flex-wrap: wrap;
 }
 .aboutAgency__column {
   border: 1px solid red;
+  flex: 1 1 260px;
   text-align: center;
   margin-right: 30px;
 }
@@ -5641,6 +5648,76 @@ body {
   padding-right: 215px;
   background-color: #f3f3f3;
   color: #222222;
+}
+
+.Ch {
+  font-family: "Roboto";
+  font-size: 250px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.OverCh {
+  position: absolute;
+  top: 100px;
+  font-size: 30px;
+  font-family: "Gotham";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blog {
+  background-color: white;
+  padding-bottom: 130px;
+  padding-top: 90px;
+  font-family: "Gotham";
+}
+.blog__heading {
+  border: 1px solid green;
+  position: relative;
+  text-align: center;
+}
+.blog__headingCh {
+  border: 1px solid green;
+  color: rgba(34, 34, 34, 0.18);
+}
+.blog__headingTitle {
+  border: 1px solid red;
+  color: #222222;
+  left: 475px;
+}
+.blog__headingText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 80px;
+}
+.blog__row {
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog__column {
+  border: 1px solid green;
+  flex: 0 1 280px;
+}
+.blog__columnTitle {
+  border: 1px solid green;
+  font-size: 18px;
+  color: #11749e;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+  padding-top: 45px;
+}
+.blog__columnText {
+  font-size: 15px;
+  color: #222222;
+  line-height: 1.6;
+  text-align: center;
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
