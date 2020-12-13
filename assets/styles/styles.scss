@@ -348,35 +348,7 @@ body {
 }
 
 .blog {
-  background-color: white;
-  padding-bottom: 130px;
-  padding-top: 90px;
-  font-family: "Gotham";
-
-  &__heading {
-    @include showBorderBlock(1px, solid, green);
-    position: relative;
-    text-align: center;
-
-  }
-
-  &__headingCh {
-    @include showBorderBlock(1px, solid, green);
-    color: rgba(34, 34, 34, 0.18);
-  }
-
-  &__headingTitle {
-    @include showBorderBlock(1px, solid, red);
-    color: rgb(34, 34, 34);
-    left: 475px;
-  }
-
-  &__headingText {
-    font-size: 30px;
-    font-weight: 500;
-    color: rgb(34, 34, 34);
-    margin-bottom: 80px;
-  }
+  @include headBlogTeam(475px);
 
   &__row {
     @include showBorderBlock(1px, solid, green);
@@ -406,5 +378,165 @@ body {
     line-height: 1.6;
     text-align: center;
     padding-top: 20px;
+  }
+}
+
+.quick {
+  @include showBorderBlock(1px, solid, red);
+  background-color: #11749e;
+  padding: 110px 0;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__column {
+    @include showBorderBlock(1px, solid, red);
+    flex: 1 1 570px;
+    display: flex;
+
+  }
+
+  &__columnIco {
+    @include showBorderBlock(1px, solid, red);
+    flex: 0 0 auto;
+  }
+
+  &__columnText {
+    @include showBorderBlock(1px, solid, red);
+    flex: 1 1 auto;
+    padding: 0 20px;
+
+    font-size: 15px;
+    font-family: "Gotham";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+.key {
+  @include showBorderBlock(1px, solid, red);
+  background: url("../img/bg/bg.jpg") 0 0/cover no-repeat;
+  font-family: "Gotham";
+  color: white;
+
+  &__row {
+    @include showBorderBlock(1px, solid, red);
+    display: flex;
+    padding: 100px 0px;
+  }
+
+  &__textArea {
+    @include showBorderBlock(1px, solid, red);
+    padding: 150px 105px 150px 5px;
+    flex: 0 0 $containerWidth/2;
+  }
+
+  &__textAreaTitle {
+    @include showBorderBlock(1px, solid, green);
+    font-size: 25px;
+    text-transform: uppercase;
+    //text-align: left;
+  }
+
+  &__textAreaText {
+    @include showBorderBlock(1px, solid, white);
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 40px 0;
+    //text-align: left;
+  }
+
+  &__textAreaLabel {
+    @include showBorderBlock(1px, solid, red);
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+    background-color: #11749e;
+    margin-top: 25px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+
+  @for $i from 3 through 5 {
+    &__textAreaLabel:nth-child(#{$i}) {
+      width: 380px + $i*30;
+      //color: red;
+    }
+  }
+
+  &__smart {
+    @include showBorderBlock(1px, solid, red);
+    text-align: center;
+    flex: 0 0 $containerWidth/2;
+  }
+}
+
+.team {
+  @include headBlogTeam(500px);
+
+  padding-bottom: 55px;
+
+  &__row{
+    @include showBorderBlock(1px, solid, red);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__column{
+    @include showBorderBlock(1px, solid, red);
+  }
+
+  &__column{
+    //background: url("../img/team/1.jpg")  0 0/270px 414px no-repeat;
+    height: 486px;
+    width: 270px;
+  }
+
+  //для каждой колонки накидываю BG
+  @for $i from 1 through 4{
+    &__column_#{$i} {
+      background: url("../img/team/#{$i}.jpg")  0 0/270px 414px no-repeat;
+    }
+  }
+
+  &__empItem{
+    display: flex;
+    flex-direction: column;
+    height: 486px;
+  }
+
+  &__empNull{
+    flex: 1 1 100%;
+  }
+
+  &__emp{
+    @include showBorderBlock(1px, solid, red);
+    text-align: center;
+    background-color: white;
+    width: 215px;
+    height: 125px;
+    margin: 0 auto;
+    padding-top: 25px;
+    flex: 0 0 auto;
+    font-weight: bold;
+  }
+
+  &__name{
+      font-size: 20px;
+      color: rgb(17, 116, 158);
+      text-transform: uppercase;
+      line-height: 1.2;
+  }
+
+  &__post{
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+      line-height: 1.6;
   }
 }

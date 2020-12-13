@@ -5408,7 +5408,6 @@ body {
 .container {
   max-width: 1170px;
   margin: 0px auto;
-  border: 1px solid red;
 }
 
 @media (max-width: 1200px) {
@@ -5428,7 +5427,6 @@ body {
 }
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
-  border: 1px solid red;
   height: 880px;
 }
 .header__underLine {
@@ -5446,15 +5444,12 @@ body {
   color: whitesmoke;
   font-weight: bold;
   text-transform: uppercase;
-  border: 1px solid red;
 }
 .header__nav {
-  border: 1px solid red;
   flex: 1 1 auto;
   margin-left: 14.3em;
 }
 .header__navList {
-  border: 1px solid white;
   font-size: 20px;
   font-family: "Myriad Pro";
   color: white;
@@ -5464,11 +5459,9 @@ body {
   justify-content: space-around;
 }
 .header__navList li {
-  border: 1px solid green;
   padding: 46px 0;
 }
 .header__navList a {
-  border: 1px solid red;
   padding: 46px 0px;
 }
 .header__navList a:visited {
@@ -5478,12 +5471,10 @@ body {
   border-bottom: 6px solid #11749e;
 }
 .header__socialIcon {
-  border: 1px solid red;
   padding: 46px 0;
   width: 145px;
 }
 .header__socialIconList {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -5496,7 +5487,6 @@ body {
   color: whitesmoke;
 }
 .header__creative {
-  border: 1px solid white;
   padding: 250px 0 0;
   text-align: center;
   font-size: 143px;
@@ -5506,7 +5496,6 @@ body {
   text-transform: uppercase;
 }
 .header__power {
-  border: 1px solid green;
   padding: 20px 0 0;
   font-size: 30px;
   font-family: "Gotham";
@@ -5517,18 +5506,15 @@ body {
   text-align: center;
 }
 .header__scroll {
-  border: 1px solid green;
   text-align: center;
 }
 .header__scrollTitle {
-  border: 1px solid red;
   padding: 116px 0px 22px;
   font-size: 13px;
   font-family: "OpenSans";
   color: white;
 }
 .header__scrollBtn {
-  border: 1px solid white;
   font-size: 30px;
   font-weight: bold;
   font-family: "FontAwesome";
@@ -5543,31 +5529,25 @@ body {
 }
 
 .aboutAgency {
-  border: 1px solid red;
   background-color: #11749e;
   padding-bottom: 130px;
   padding-top: 90px;
 }
 .aboutAgency__heading {
-  border: 1px solid green;
   position: relative;
 }
 .aboutAgency__headingCh {
-  border: 1px solid green;
   color: rgba(255, 255, 255, 0.18);
 }
 .aboutAgency__headingTitle {
-  border: 1px solid white;
   left: 350px;
   color: white;
 }
 .aboutAgency__row {
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
 }
 .aboutAgency__column {
-  border: 1px solid red;
   flex: 1 1 260px;
   text-align: center;
   margin-right: 30px;
@@ -5575,11 +5555,7 @@ body {
 .aboutAgency__column:last-child {
   margin-right: 0px;
 }
-.aboutAgency__columnIcon {
-  border: 1px solid yellow;
-}
 .aboutAgency__columnTitle {
-  border: 1px solid red;
   font-size: 18px;
   font-family: "Gotham";
   color: white;
@@ -5587,22 +5563,17 @@ body {
   line-height: 2;
 }
 .aboutAgency__columnText {
-  border: 1px solid white;
   font-size: 15px;
   font-family: "Gotham";
   color: white;
   line-height: 1.6;
 }
 
-.news {
-  border: 1px solid red;
-}
 .news__items {
   display: flex;
   flex-wrap: wrap;
 }
 .news__item {
-  border: 1px solid red;
   flex: 1 1 750px;
   padding: 70px 0 0 0;
 }
@@ -5636,14 +5607,12 @@ body {
   flex: 0 0 750px;
 }
 .news__item_1 {
-  border: 1px solid green;
   padding-left: 215px;
   padding-right: 110px;
   background-color: #222222;
   color: white;
 }
 .news__item_4 {
-  border: 1px solid green;
   padding-left: 110px;
   padding-right: 215px;
   background-color: #f3f3f3;
@@ -5674,16 +5643,13 @@ body {
   font-family: "Gotham";
 }
 .blog__heading {
-  border: 1px solid green;
   position: relative;
   text-align: center;
 }
 .blog__headingCh {
-  border: 1px solid green;
   color: rgba(34, 34, 34, 0.18);
 }
 .blog__headingTitle {
-  border: 1px solid red;
   color: #222222;
   left: 475px;
 }
@@ -5694,17 +5660,14 @@ body {
   margin-bottom: 80px;
 }
 .blog__row {
-  border: 1px solid green;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .blog__column {
-  border: 1px solid green;
   flex: 0 1 280px;
 }
 .blog__columnTitle {
-  border: 1px solid green;
   font-size: 18px;
   color: #11749e;
   text-transform: uppercase;
@@ -5718,6 +5681,152 @@ body {
   line-height: 1.6;
   text-align: center;
   padding-top: 20px;
+}
+
+.quick {
+  background-color: #11749e;
+  padding: 110px 0;
+}
+.quick__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quick__column {
+  flex: 1 1 570px;
+  display: flex;
+}
+.quick__columnIco {
+  flex: 0 0 auto;
+}
+.quick__columnText {
+  flex: 1 1 auto;
+  padding: 0 20px;
+  font-size: 15px;
+  font-family: "Gotham";
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.key {
+  background: url("../img/bg/bg.jpg") 0 0/cover no-repeat;
+  font-family: "Gotham";
+  color: white;
+}
+.key__row {
+  display: flex;
+  padding: 100px 0px;
+}
+.key__textArea {
+  padding: 150px 105px 150px 5px;
+  flex: 0 0 585px;
+}
+.key__textAreaTitle {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.key__textAreaText {
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 40px 0;
+}
+.key__textAreaLabel {
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 40px;
+  background-color: #11749e;
+  margin-top: 25px;
+  height: 40px;
+  padding-left: 10px;
+}
+.key__textAreaLabel:nth-child(3) {
+  width: 470px;
+}
+.key__textAreaLabel:nth-child(4) {
+  width: 500px;
+}
+.key__textAreaLabel:nth-child(5) {
+  width: 530px;
+}
+.key__smart {
+  text-align: center;
+  flex: 0 0 585px;
+}
+
+.team {
+  background-color: white;
+  padding-bottom: 130px;
+  padding-top: 90px;
+  font-family: "Gotham";
+  padding-bottom: 55px;
+}
+.team__heading {
+  position: relative;
+  text-align: center;
+}
+.team__headingCh {
+  color: rgba(34, 34, 34, 0.18);
+}
+.team__headingTitle {
+  color: #222222;
+  left: 500px;
+}
+.team__headingText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 80px;
+}
+.team__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team__column {
+  height: 486px;
+  width: 270px;
+}
+.team__column_1 {
+  background: url("../img/team/1.jpg") 0 0/270px 414px no-repeat;
+}
+.team__column_2 {
+  background: url("../img/team/2.jpg") 0 0/270px 414px no-repeat;
+}
+.team__column_3 {
+  background: url("../img/team/3.jpg") 0 0/270px 414px no-repeat;
+}
+.team__column_4 {
+  background: url("../img/team/4.jpg") 0 0/270px 414px no-repeat;
+}
+.team__empItem {
+  display: flex;
+  flex-direction: column;
+  height: 486px;
+}
+.team__empNull {
+  flex: 1 1 100%;
+}
+.team__emp {
+  text-align: center;
+  background-color: white;
+  width: 215px;
+  height: 125px;
+  margin: 0 auto;
+  padding-top: 25px;
+  flex: 0 0 auto;
+  font-weight: bold;
+}
+.team__name {
+  font-size: 20px;
+  color: #11749e;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.team__post {
+  font-size: 15px;
+  color: black;
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=styles.css.map */

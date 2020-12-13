@@ -34,3 +34,35 @@
   border: 1px solid white;
   border-radius: 50%;
 }
+
+@mixin headBlogTeam($left){
+  background-color: white;
+  padding-bottom: 130px;
+  padding-top: 90px;
+  font-family: "Gotham";
+
+  &__heading {
+    @include showBorderBlock(1px, solid, green);
+    position: relative;
+    text-align: center;
+
+  }
+
+  &__headingCh {
+    @include showBorderBlock(1px, solid, green);
+    color: rgba(34, 34, 34, 0.18);
+  }
+
+  &__headingTitle {
+    @include showBorderBlock(1px, solid, red);
+    color: rgb(34, 34, 34);
+    left: $left;
+  }
+
+  &__headingText {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-bottom: 80px;
+  }
+}
