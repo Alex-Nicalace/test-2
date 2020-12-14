@@ -569,3 +569,38 @@ body {
     text-transform: uppercase;
   }
 }
+
+
+.footer {
+  @include showBorderBlock(1px, solid, green);
+  background-color: #222222;
+  color: white;
+
+
+  &__row {
+    @include showBorderBlock(1px, solid, white);
+    display: flex;
+    height: $footerHeight;
+  }
+
+  &__right {
+    //@include showBorderBlock(1px, solid, red);
+    flex: 0 0 auto;
+    @include showBorderBlock(1px, solid, white);
+    //line-height: 115px;
+    margin: auto 0px;
+  }
+
+  &__null {
+    //@include showBorderBlock(1px, solid, red);
+    flex: 1 1 100%;
+  }
+
+  &__img {
+    @include showBorderBlock(1px, solid, red);
+    flex: 0 0 auto;
+    margin: auto 0px;
+    //line-height: 115px;
+  }
+
+}

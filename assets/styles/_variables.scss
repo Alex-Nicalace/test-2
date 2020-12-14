@@ -1,6 +1,6 @@
 //от ладочные переменные
 //показывать ли границы и делать ли заливку
-$isShowBorderBlock: 1;
+$isShowBorderBlock: 0;
 $isFillContainer: 0;
 
 //хэдер отступ по вертикали
@@ -11,3 +11,5 @@ $pageWidth: 1600px;
 
 //ширина контента страницы
 $containerWidth: 1170px;
+
+$footerHeight: 115px;
