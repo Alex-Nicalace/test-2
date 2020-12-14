@@ -35,17 +35,19 @@
   border-radius: 50%;
 }
 
-@mixin headBlogTeamCont($left, $colorCh, $colorTitle){
+@mixin headBlogTeamCont($colorCh, $colorTitle){
   //background-color: white;
   padding-bottom: 130px;
   padding-top: 90px;
   font-family: "Gotham";
 
   &__heading {
-    @include showBorderBlock(1px, solid, green);
-    position: relative;
-    text-align: center;
-
+    @include showBorderBlock(1px, solid, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //text-align: center;
+    //position: relative;
   }
 
   &__headingCh {
@@ -58,13 +60,15 @@
     @include showBorderBlock(1px, solid, red);
     //color: rgb(34, 34, 34);
     color: $colorTitle;
-    left: $left;
+    //left: $left;
   }
 
   &__headingText {
+    @include showBorderBlock(1px, solid, black);
     font-size: 30px;
     font-weight: 500;
     color: rgb(34, 34, 34);
     margin-bottom: 80px;
+    text-align: center;
   }
 }

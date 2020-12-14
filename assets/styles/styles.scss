@@ -185,7 +185,7 @@ body {
   @include showBorderBlock(1px, solid, red);
   background-color: #11749e;
 
-  @include headBlogTeamCont(315px, rgba(255, 255, 255, 0.18), rgb(255, 255, 255));
+  @include headBlogTeamCont(rgba(255, 255, 255, 0.18), rgb(255, 255, 255));
 
   &__row {
     @include showBorderBlock(1px, solid, white);
@@ -200,10 +200,6 @@ body {
     text-align: center;
     margin: 0 15px;
   }
-
-  //&__column:last-child {
-  //  margin-right: 0px;
-  //}
 
   &__columnIcon {
     @include showBorderBlock(1px, solid, yellow);
@@ -314,16 +310,17 @@ body {
 
 .OverCh {
   position: absolute;
-  top: 100px;
+  //top: 100px;
   font-size: 30px;
   font-family: "Gotham";
   text-transform: uppercase;
   font-weight: bold;
+  //z-index: 10;
 }
 
 .blog {
   background-color: white;
-  @include headBlogTeamCont(500px, rgba(34, 34, 34, 0.18), rgb(34, 34, 34));
+  @include headBlogTeamCont(rgba(34, 34, 34, 0.18), rgb(34, 34, 34));
 
   &__row {
     @include showBorderBlock(1px, solid, green);
@@ -453,7 +450,7 @@ body {
 
 .team {
   background-color: white;
-  @include headBlogTeamCont(500px, rgba(34, 34, 34, 0.18), rgb(34, 34, 34));
+  @include headBlogTeamCont(rgba(34, 34, 34, 0.18), rgb(34, 34, 34));
 
   padding-bottom: 55px;
 
@@ -518,7 +515,7 @@ body {
 }
 
 .cont {
-  @include headBlogTeamCont(420px, rgba(255, 255, 255, 0.18), white);
+  @include headBlogTeamCont(rgba(255, 255, 255, 0.18), white);
   background: url("../img/cont/bg.jpg") 0 0/cover no-repeat;
   @include showBorderBlock(1px, solid, red);
 
@@ -580,7 +577,8 @@ body {
   &__row {
     @include showBorderBlock(1px, solid, white);
     display: flex;
-    height: $footerHeight;
+    flex-wrap: wrap;
+    min-height: $footerHeight;
   }
 
   &__right {
@@ -592,8 +590,8 @@ body {
   }
 
   &__null {
-    //@include showBorderBlock(1px, solid, red);
-    flex: 1 1 100%;
+    @include showBorderBlock(1px, solid, red);
+    flex: 1 0 33%;
   }
 
   &__img {
