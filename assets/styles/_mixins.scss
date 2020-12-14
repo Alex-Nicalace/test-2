@@ -35,8 +35,8 @@
   border-radius: 50%;
 }
 
-@mixin headBlogTeam($left){
-  background-color: white;
+@mixin headBlogTeamCont($left, $colorCh, $colorTitle){
+  //background-color: white;
   padding-bottom: 130px;
   padding-top: 90px;
   font-family: "Gotham";
@@ -50,12 +50,14 @@
 
   &__headingCh {
     @include showBorderBlock(1px, solid, green);
-    color: rgba(34, 34, 34, 0.18);
+    //color: rgba(34, 34, 34, 0.18);
+    color: $colorCh;
   }
 
   &__headingTitle {
     @include showBorderBlock(1px, solid, red);
-    color: rgb(34, 34, 34);
+    //color: rgb(34, 34, 34);
+    color: $colorTitle;
     left: $left;
   }
 
