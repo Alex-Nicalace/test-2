@@ -46,11 +46,26 @@ body {
 //  }
 //}
 
-@media (max-width: 360px) {
+@media (max-width: 960px) {
+  html{
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 576px) {
   html{
     font-size: 5px;
   }
 }
+
+
 
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
@@ -461,7 +476,7 @@ body {
 
   @for $i from 3 through 5 {
     &__textAreaLabel:nth-child(#{$i}) {
-      @media (max-width: 360px) {
+      @media (max-width: 768px) {
         width: px-to-rem(760px + $i*30);
       }
       width: px-to-rem(260px + $i*30);

@@ -5411,7 +5411,17 @@ body {
   border: 1px solid red;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 960px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 576px) {
   html {
     font-size: 5px;
   }
@@ -5801,7 +5811,7 @@ body {
 .key__textAreaLabel:nth-child(3) {
   width: 25rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .key__textAreaLabel:nth-child(3) {
     width: 60.7142857143rem;
   }
@@ -5809,7 +5819,7 @@ body {
 .key__textAreaLabel:nth-child(4) {
   width: 27.1428571429rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .key__textAreaLabel:nth-child(4) {
     width: 62.8571428571rem;
   }
@@ -5817,7 +5827,7 @@ body {
 .key__textAreaLabel:nth-child(5) {
   width: 29.2857142857rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .key__textAreaLabel:nth-child(5) {
     width: 65rem;
   }
