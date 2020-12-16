@@ -22,34 +22,40 @@ body {
 }
 
 .container {
-  max-width: $containerWidth;
+  max-width: px-to-rem($containerWidth);
   margin: 0px auto; //такое сочетание дает оцентровку
   //@include showBorderBlock(1px, solid, red);
   @include showBorderBlock(1px, solid, red);
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
+//@media (max-width: 1200px) {
+//  .container {
+//    max-width: 970px;
+//  }
+//}
+//
+//@media (max-width: 992px) {
+//  .container {
+//    max-width: 750px;
+//  }
+//}
+//
+//@media (max-width: 767px) {
+//  .container {
+//    max-width: 750px;
+//  }
+//}
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 750px;
+@media (max-width: 360px) {
+  html{
+    font-size: 5px;
   }
 }
 
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
   @include showBorderBlock(1px, solid, red);
-  height: 880px;
+  height: px-to-rem(880px);
 
   &__underLine {
     border-bottom: 2px solid #3b3a38;
@@ -69,31 +75,28 @@ body {
     @include showBorderBlock(1px, solid, red);
     flex: 1 1 auto;
     //padding: $HeaderPaddingTop 0;
-    //margin-left: 200px;
-    margin-left: 14.3em;
+    margin-left: px-to-rem(200px);
   }
 
   &__navList {
     @include showBorderBlock(1px, solid, white);
-    font-size: 20px;
+    font-size: px-to-rem(20px);
     font-family: "Myriad Pro";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
-    //padding-top: 55px;
     display: flex;
     justify-content: space-around;
-    //justify-content: flex-end;
-    //padding: $HeaderPaddingTop 0;
     li {
       @include showBorderBlock(1px, solid, green);
-      padding: $HeaderPaddingTop 0;
-      //flex-basis: 125px;
+      padding: px_to-rem($HeaderPaddingTop 0);
+      //flex-basis: px_to-rem(125px);
     }
 
     a {
       @include showBorderBlock(1px, solid, red);
       padding: $HeaderPaddingTop 0px;
+      color: rgb(255, 255, 255);
       //transition-duration: 0.5s;
     }
 
@@ -109,7 +112,7 @@ body {
   &__socialIcon {
     @include showBorderBlock(1px, solid, red);
     padding: $HeaderPaddingTop 0;
-    width: 145px;
+    width: px-to-rem(145px);
   }
 
   &__socialIconList {
@@ -117,7 +120,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    font-size: 20px;
+    font-size: px-to-rem(20px);
     font-family: "FontAwesome";
     color: rgb(245, 245, 245);
     text-transform: uppercase;
@@ -143,14 +146,14 @@ body {
 
   &__power {
     @include showBorderBlock(1px, solid, green);
-    padding: 20px 0 0;
+    padding: px-to-rem(20px 0 0);
 
-    font-size: 30px;
+    font-size: px-to-rem(30px);
     font-family: "Gotham";
     color: rgb(17, 116, 158);
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 15px;
+    letter-spacing: px-to-rem(15px);
     text-align: center;
   }
 
@@ -163,8 +166,8 @@ body {
 
   &__scrollTitle {
     @include showBorderBlock(1px, solid, red);
-    padding: 116px 0px 22px;
-    font-size: 13px;
+    padding: px-to-rem(116px 0px 22px);
+    font-size: px-to-rem(13px);
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
   }
@@ -172,12 +175,12 @@ body {
   &__scrollBtn {
     @include showBorderBlock(1px, solid, white);
 
-    font-size: 30px;
+    font-size: px-to-rem(30px);
     font-weight: bold;
     font-family: "FontAwesome";
     color: rgb(245, 245, 245);
     text-transform: uppercase;
-    @include scrollBtn(60px);
+    @include scrollBtn(px-to-rem(60px));
     margin: 0px auto; //такое сочетание дает оцентровку
   }
 }
@@ -302,7 +305,7 @@ body {
 
 .Ch {
   font-family: "Roboto";
-  font-size: 250px;
+  font-size: px-to-rem(250px);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -311,10 +314,11 @@ body {
 .OverCh {
   position: absolute;
   //top: 100px;
-  font-size: 30px;
+  font-size: px-to-rem(30px);
   font-family: "Gotham";
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
   //z-index: 10;
 }
 
@@ -407,7 +411,7 @@ body {
     //@include showBorderBlock(1px, solid, red);
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0px;
+    padding: px-to-rem(100px 0px);
   }
 
   &__column{
@@ -417,8 +421,13 @@ body {
 
   &__column_textArea {
 
-    padding: 150px 105px 150px 5px;
+    //padding: px-to-rem(150px 105px 150px 5px);
+    padding: px-to-rem(150px 0 150px 5px);
 
+  }
+
+  &__column_smart {
+    text-align: center;
   }
 
   &__textAreaTitle {
@@ -432,7 +441,8 @@ body {
     @include showBorderBlock(1px, solid, white);
     font-size: 15px;
     line-height: 1.6;
-    padding: 40px 0;
+    //padding: px-to-rem(40px 140px 40px 0);
+    margin: px-to-rem(40px 100px 40px 0px);
     //text-align: left;
   }
 
@@ -448,16 +458,18 @@ body {
   }
 
 
+
   @for $i from 3 through 5 {
     &__textAreaLabel:nth-child(#{$i}) {
-      width: 380px + $i*30;
+      @media (max-width: 360px) {
+        width: px-to-rem(760px + $i*30);
+      }
+      width: px-to-rem(260px + $i*30);
       //color: red;
     }
   }
 
-  &__column_smart {
-    text-align: center;
-  }
+
 }
 
 .team {
@@ -471,29 +483,28 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 -13px;
   }
 
   &__column {
     @include showBorderBlock(1px, solid, red);
-  }
-
-  &__column {
-    //background: url("../img/team/1.jpg")  0 0/270px 414px no-repeat;
-    height: 486px;
-    width: 270px;
+    //height: 486px;
+    //width: 270px;
+    flex: 1 1 px-to-rem(270px);
+    margin: 0 13px;
   }
 
   //для каждой колонки накидываю BG
   @for $i from 1 through 4 {
     &__column_#{$i} {
-      background: url("../img/team/#{$i}.jpg") 0 0/270px 414px no-repeat;
+      background: url("../img/team/#{$i}.jpg") 0 0/100% auto no-repeat;
     }
   }
 
   &__empItem {
     display: flex;
     flex-direction: column;
-    height: 486px;
+    height: px-to-rem(486px);
   }
 
   &__empNull {
@@ -504,8 +515,8 @@ body {
     @include showBorderBlock(1px, solid, red);
     text-align: center;
     background-color: white;
-    width: 215px;
-    height: 125px;
+    width: px-to-rem(215px);
+    height: px-to-rem(125px);
     margin: 0 auto;
     padding-top: 25px;
     flex: 0 0 auto;
@@ -513,14 +524,14 @@ body {
   }
 
   &__name {
-    font-size: 20px;
+    font-size: px-to-rem(20px);
     color: rgb(17, 116, 158);
     text-transform: uppercase;
     line-height: 1.2;
   }
 
   &__post {
-    font-size: 15px;
+    font-size: px-to-rem(15px);
     color: rgb(0, 0, 0);
     line-height: 1.6;
   }

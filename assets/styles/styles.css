@@ -5406,30 +5406,20 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 83.5714285714rem;
   margin: 0px auto;
   border: 1px solid red;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 750px;
+@media (max-width: 360px) {
+  html {
+    font-size: 5px;
   }
 }
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
   border: 1px solid red;
-  height: 880px;
+  height: 62.8571428571rem;
 }
 .header__underLine {
   border-bottom: 2px solid #3b3a38;
@@ -5438,10 +5428,10 @@ body {
   display: flex;
 }
 .header__logo {
-  padding: 36px 0px 0px 10px;
-  width: 85px;
-  background: url("../img/header/logo/Rectangle9copy.jpg") 0px 21px no-repeat, url("../img/header/logo/Rectangle9.png") 12px 30px no-repeat;
-  font-size: 38.349px;
+  padding: 2.5714285714rem 0rem 0rem 0.7142857143rem;
+  width: 6.0714285714rem;
+  background: url("../img/header/logo/Rectangle9copy.jpg") 0rem 1.5rem/4.7857142857rem 4.7857142857rem no-repeat, url("../img/header/logo/Rectangle9.png") 0.8571428571rem 2.1428571429rem/4.7857142857rem 4.7857142857rem no-repeat;
+  font-size: 2.7392142857rem;
   font-family: "Open Sans";
   color: whitesmoke;
   font-weight: bold;
@@ -5451,11 +5441,11 @@ body {
 .header__nav {
   border: 1px solid red;
   flex: 1 1 auto;
-  margin-left: 14.3em;
+  margin-left: 14.2857142857rem;
 }
 .header__navList {
   border: 1px solid white;
-  font-size: 20px;
+  font-size: 1.4285714286rem;
   font-family: "Myriad Pro";
   color: white;
   line-height: 1.2;
@@ -5465,11 +5455,12 @@ body {
 }
 .header__navList li {
   border: 1px solid green;
-  padding: 46px 0;
+  padding: 3.2857142857rem 0rem;
 }
 .header__navList a {
   border: 1px solid red;
   padding: 46px 0px;
+  color: white;
 }
 .header__navList a:visited {
   color: white;
@@ -5480,13 +5471,13 @@ body {
 .header__socialIcon {
   border: 1px solid red;
   padding: 46px 0;
-  width: 145px;
+  width: 10.3571428571rem;
 }
 .header__socialIconList {
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 1.4285714286rem;
   font-family: "FontAwesome";
   color: whitesmoke;
   text-transform: uppercase;
@@ -5507,13 +5498,13 @@ body {
 }
 .header__power {
   border: 1px solid green;
-  padding: 20px 0 0;
-  font-size: 30px;
+  padding: 1.4285714286rem 0rem 0rem;
+  font-size: 2.1428571429rem;
   font-family: "Gotham";
   color: #11749e;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 15px;
+  letter-spacing: 1.0714285714rem;
   text-align: center;
 }
 .header__scroll {
@@ -5522,21 +5513,21 @@ body {
 }
 .header__scrollTitle {
   border: 1px solid red;
-  padding: 116px 0px 22px;
-  font-size: 13px;
+  padding: 8.2857142857rem 0rem 1.5714285714rem;
+  font-size: 0.9285714286rem;
   font-family: "OpenSans";
   color: white;
 }
 .header__scrollBtn {
   border: 1px solid white;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-weight: bold;
   font-family: "FontAwesome";
   color: whitesmoke;
   text-transform: uppercase;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 4.2857142857rem;
+  height: 4.2857142857rem;
+  line-height: 4.2857142857rem;
   border: 1px solid white;
   border-radius: 50%;
   margin: 0px auto;
@@ -5545,8 +5536,8 @@ body {
 .aboutAgency {
   border: 1px solid red;
   background-color: #11749e;
-  padding-bottom: 130px;
-  padding-top: 90px;
+  padding-bottom: 9.2857142857rem;
+  padding-top: 6.4285714286rem;
   font-family: "Gotham";
 }
 .aboutAgency__heading {
@@ -5565,10 +5556,10 @@ body {
 }
 .aboutAgency__headingText {
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
-  margin-bottom: 80px;
+  margin-bottom: 5.7142857143rem;
   text-align: center;
 }
 .aboutAgency__row {
@@ -5659,7 +5650,7 @@ body {
 
 .Ch {
   font-family: "Roboto";
-  font-size: 250px;
+  font-size: 17.8571428571rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -5667,16 +5658,17 @@ body {
 
 .OverCh {
   position: absolute;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-family: "Gotham";
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .blog {
   background-color: white;
-  padding-bottom: 130px;
-  padding-top: 90px;
+  padding-bottom: 9.2857142857rem;
+  padding-top: 6.4285714286rem;
   font-family: "Gotham";
 }
 .blog__heading {
@@ -5695,10 +5687,10 @@ body {
 }
 .blog__headingText {
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
-  margin-bottom: 80px;
+  margin-bottom: 5.7142857143rem;
   text-align: center;
 }
 .blog__row {
@@ -5773,14 +5765,17 @@ body {
 .key__row {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 0px;
+  padding: 7.1428571429rem 0rem;
 }
 .key__column {
   border: 1px solid red;
   flex: 1 1 35.7142857143rem;
 }
 .key__column_textArea {
-  padding: 150px 105px 150px 5px;
+  padding: 10.7142857143rem 0rem 10.7142857143rem 0.3571428571rem;
+}
+.key__column_smart {
+  text-align: center;
 }
 .key__textAreaTitle {
   border: 1px solid green;
@@ -5791,7 +5786,7 @@ body {
   border: 1px solid white;
   font-size: 15px;
   line-height: 1.6;
-  padding: 40px 0;
+  margin: 2.8571428571rem 7.1428571429rem 2.8571428571rem 0rem;
 }
 .key__textAreaLabel {
   border: 1px solid red;
@@ -5804,22 +5799,34 @@ body {
   padding-left: 10px;
 }
 .key__textAreaLabel:nth-child(3) {
-  width: 470px;
+  width: 25rem;
+}
+@media (max-width: 360px) {
+  .key__textAreaLabel:nth-child(3) {
+    width: 60.7142857143rem;
+  }
 }
 .key__textAreaLabel:nth-child(4) {
-  width: 500px;
+  width: 27.1428571429rem;
+}
+@media (max-width: 360px) {
+  .key__textAreaLabel:nth-child(4) {
+    width: 62.8571428571rem;
+  }
 }
 .key__textAreaLabel:nth-child(5) {
-  width: 530px;
+  width: 29.2857142857rem;
 }
-.key__column_smart {
-  text-align: center;
+@media (max-width: 360px) {
+  .key__textAreaLabel:nth-child(5) {
+    width: 65rem;
+  }
 }
 
 .team {
   background-color: white;
-  padding-bottom: 130px;
-  padding-top: 90px;
+  padding-bottom: 9.2857142857rem;
+  padding-top: 6.4285714286rem;
   font-family: "Gotham";
   padding-bottom: 55px;
 }
@@ -5839,10 +5846,10 @@ body {
 }
 .team__headingText {
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
-  margin-bottom: 80px;
+  margin-bottom: 5.7142857143rem;
   text-align: center;
 }
 .team__row {
@@ -5850,30 +5857,29 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -13px;
 }
 .team__column {
   border: 1px solid red;
-}
-.team__column {
-  height: 486px;
-  width: 270px;
+  flex: 1 1 19.2857142857rem;
+  margin: 0 13px;
 }
 .team__column_1 {
-  background: url("../img/team/1.jpg") 0 0/270px 414px no-repeat;
+  background: url("../img/team/1.jpg") 0 0/100% auto no-repeat;
 }
 .team__column_2 {
-  background: url("../img/team/2.jpg") 0 0/270px 414px no-repeat;
+  background: url("../img/team/2.jpg") 0 0/100% auto no-repeat;
 }
 .team__column_3 {
-  background: url("../img/team/3.jpg") 0 0/270px 414px no-repeat;
+  background: url("../img/team/3.jpg") 0 0/100% auto no-repeat;
 }
 .team__column_4 {
-  background: url("../img/team/4.jpg") 0 0/270px 414px no-repeat;
+  background: url("../img/team/4.jpg") 0 0/100% auto no-repeat;
 }
 .team__empItem {
   display: flex;
   flex-direction: column;
-  height: 486px;
+  height: 34.7142857143rem;
 }
 .team__empNull {
   flex: 1 1 100%;
@@ -5882,28 +5888,28 @@ body {
   border: 1px solid red;
   text-align: center;
   background-color: white;
-  width: 215px;
-  height: 125px;
+  width: 15.3571428571rem;
+  height: 8.9285714286rem;
   margin: 0 auto;
   padding-top: 25px;
   flex: 0 0 auto;
   font-weight: bold;
 }
 .team__name {
-  font-size: 20px;
+  font-size: 1.4285714286rem;
   color: #11749e;
   text-transform: uppercase;
   line-height: 1.2;
 }
 .team__post {
-  font-size: 15px;
+  font-size: 1.0714285714rem;
   color: black;
   line-height: 1.6;
 }
 
 .cont {
-  padding-bottom: 130px;
-  padding-top: 90px;
+  padding-bottom: 9.2857142857rem;
+  padding-top: 6.4285714286rem;
   font-family: "Gotham";
   background: url("../img/cont/bg.jpg") 0 0/cover no-repeat;
   border: 1px solid red;
@@ -5924,10 +5930,10 @@ body {
 }
 .cont__headingText {
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
-  margin-bottom: 80px;
+  margin-bottom: 5.7142857143rem;
   text-align: center;
 }
 .cont__threeInput {
