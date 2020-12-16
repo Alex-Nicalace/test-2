@@ -5408,6 +5408,7 @@ body {
 .container {
   max-width: 83.5714285714rem;
   margin: 0px auto;
+  border: 1px solid red;
 }
 
 @media (max-width: 960px) {
@@ -5427,6 +5428,7 @@ body {
 }
 .header {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
+  border: 1px solid red;
   height: 62.8571428571rem;
 }
 .header__underLine {
@@ -5444,12 +5446,15 @@ body {
   color: whitesmoke;
   font-weight: bold;
   text-transform: uppercase;
+  border: 1px solid red;
 }
 .header__nav {
+  border: 1px solid red;
   flex: 1 1 auto;
   margin-left: 14.2857142857rem;
 }
 .header__navList {
+  border: 1px solid white;
   font-size: 1.4285714286rem;
   font-family: "Myriad Pro";
   color: white;
@@ -5459,9 +5464,11 @@ body {
   justify-content: space-around;
 }
 .header__navList li {
+  border: 1px solid green;
   padding: 3.2857142857rem 0rem;
 }
 .header__navList a {
+  border: 1px solid red;
   padding: 46px 0px;
   color: white;
 }
@@ -5472,10 +5479,12 @@ body {
   border-bottom: 6px solid #11749e;
 }
 .header__socialIcon {
+  border: 1px solid red;
   padding: 46px 0;
   width: 10.3571428571rem;
 }
 .header__socialIconList {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   font-size: 1.4285714286rem;
@@ -5488,6 +5497,7 @@ body {
   color: whitesmoke;
 }
 .header__creative {
+  border: 1px solid white;
   padding: 17.8571428571rem 0rem 0rem;
   text-align: center;
   font-size: 10.2142857143rem;
@@ -5497,6 +5507,7 @@ body {
   text-transform: uppercase;
 }
 .header__power {
+  border: 1px solid green;
   padding: 1.4285714286rem 0rem 0rem;
   font-size: 2.1428571429rem;
   font-family: "Gotham";
@@ -5507,15 +5518,18 @@ body {
   text-align: center;
 }
 .header__scroll {
+  border: 1px solid green;
   text-align: center;
 }
 .header__scrollTitle {
+  border: 1px solid red;
   padding: 8.2857142857rem 0rem 1.5714285714rem;
   font-size: 0.9285714286rem;
   font-family: "OpenSans";
   color: white;
 }
 .header__scrollBtn {
+  border: 1px solid white;
   font-size: 2.1428571429rem;
   font-weight: bold;
   font-family: "FontAwesome";
@@ -5530,23 +5544,28 @@ body {
 }
 
 .aboutAgency {
+  border: 1px solid red;
   background-color: #11749e;
   padding-bottom: 9.2857142857rem;
   padding-top: 6.4285714286rem;
   font-family: "Gotham";
 }
 .aboutAgency__heading {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .aboutAgency__headingCh {
+  border: 1px solid green;
   color: rgba(255, 255, 255, 0.18);
 }
 .aboutAgency__headingTitle {
+  border: 1px solid red;
   color: white;
 }
 .aboutAgency__headingText {
+  border: 1px solid black;
   font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
@@ -5554,16 +5573,22 @@ body {
   text-align: center;
 }
 .aboutAgency__row {
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   margin: 0px -15px;
 }
 .aboutAgency__column {
+  border: 1px solid red;
   flex: 1 1 260px;
   text-align: center;
   margin: 0 15px;
 }
+.aboutAgency__columnIcon {
+  border: 1px solid yellow;
+}
 .aboutAgency__columnTitle {
+  border: 1px solid red;
   font-size: 18px;
   font-family: "Gotham";
   color: white;
@@ -5571,25 +5596,32 @@ body {
   line-height: 2;
 }
 .aboutAgency__columnText {
+  border: 1px solid white;
   font-size: 15px;
   font-family: "Gotham";
   color: white;
   line-height: 1.6;
 }
 
+.news {
+  border: 1px solid red;
+}
 .news__items {
   display: flex;
   flex-wrap: wrap;
 }
 .news__item {
+  border: 1px solid red;
   flex: 1 1 56.8571428571rem;
 }
 .news__item_1 {
+  border: 1px solid green;
   padding: 5rem 7.8571428571rem 0rem 15.3571428571rem;
   background-color: #222222;
   color: white;
 }
 .news__item_4 {
+  border: 1px solid green;
   padding: 5rem 15.3571428571rem 0rem 7.8571428571rem;
   background-color: #f3f3f3;
   color: #222222;
@@ -5650,17 +5682,21 @@ body {
   font-family: "Gotham";
 }
 .blog__heading {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .blog__headingCh {
+  border: 1px solid green;
   color: rgba(34, 34, 34, 0.18);
 }
 .blog__headingTitle {
+  border: 1px solid red;
   color: #222222;
 }
 .blog__headingText {
+  border: 1px solid black;
   font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
@@ -5668,12 +5704,14 @@ body {
   text-align: center;
 }
 .blog__row {
+  border: 1px solid green;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 -12px;
 }
 .blog__column {
+  border: 1px solid green;
   flex: 1 1 19.2857142857rem;
   margin: 0 12px;
 }
@@ -5683,6 +5721,7 @@ body {
   object-fit: cover;
 }
 .blog__columnTitle {
+  border: 1px solid green;
   font-size: 18px;
   color: #11749e;
   text-transform: uppercase;
@@ -5699,6 +5738,7 @@ body {
 }
 
 .quick {
+  border: 1px solid red;
   background-color: #11749e;
   padding: 110px 0;
 }
@@ -5708,13 +5748,16 @@ body {
   justify-content: space-between;
 }
 .quick__column {
+  border: 1px solid red;
   flex: 1 1 570px;
   display: flex;
 }
 .quick__columnIco {
+  border: 1px solid red;
   flex: 0 0 auto;
 }
 .quick__columnText {
+  border: 1px solid red;
   flex: 1 1 auto;
   padding: 0 20px;
   font-size: 15px;
@@ -5735,6 +5778,7 @@ body {
   padding: 7.1428571429rem 0rem;
 }
 .key__column {
+  border: 1px solid red;
   flex: 1 1 35.7142857143rem;
 }
 .key__column_textArea {
@@ -5744,15 +5788,18 @@ body {
   text-align: center;
 }
 .key__textAreaTitle {
+  border: 1px solid green;
   font-size: 25px;
   text-transform: uppercase;
 }
 .key__textAreaText {
+  border: 1px solid white;
   font-size: 15px;
   line-height: 1.6;
   margin: 2.8571428571rem 7.1428571429rem 2.8571428571rem 0rem;
 }
 .key__textAreaLabel {
+  border: 1px solid red;
   font-size: 15px;
   text-transform: uppercase;
   line-height: 40px;
@@ -5794,17 +5841,21 @@ body {
   padding-bottom: 55px;
 }
 .team__heading {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .team__headingCh {
+  border: 1px solid green;
   color: rgba(34, 34, 34, 0.18);
 }
 .team__headingTitle {
+  border: 1px solid red;
   color: #222222;
 }
 .team__headingText {
+  border: 1px solid black;
   font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
@@ -5812,12 +5863,14 @@ body {
   text-align: center;
 }
 .team__row {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -13px;
 }
 .team__column {
+  border: 1px solid red;
   flex: 1 1 19.2857142857rem;
   margin: 0 13px;
 }
@@ -5842,6 +5895,7 @@ body {
   flex: 1 1 100%;
 }
 .team__emp {
+  border: 1px solid red;
   text-align: center;
   background-color: white;
   width: 15.3571428571rem;
@@ -5868,19 +5922,24 @@ body {
   padding-top: 6.4285714286rem;
   font-family: "Gotham";
   background: url("../img/cont/bg.jpg") 0 0/cover no-repeat;
+  border: 1px solid red;
 }
 .cont__heading {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cont__headingCh {
+  border: 1px solid green;
   color: rgba(255, 255, 255, 0.18);
 }
 .cont__headingTitle {
+  border: 1px solid red;
   color: white;
 }
 .cont__headingText {
+  border: 1px solid black;
   font-size: 2.1428571429rem;
   font-weight: 500;
   color: #222222;
@@ -5917,6 +5976,7 @@ body {
 }
 .cont button {
   display: block;
+  border: 1px solid red;
   height: 70px;
   width: 230px;
   margin: 0 auto;
@@ -5927,22 +5987,27 @@ body {
 }
 
 .footer {
+  border: 1px solid green;
   background-color: #222222;
   color: white;
 }
 .footer__row {
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   min-height: 115px;
 }
 .footer__right {
   flex: 0 0 auto;
+  border: 1px solid white;
   margin: auto 0px;
 }
 .footer__null {
+  border: 1px solid red;
   flex: 1 0 33%;
 }
 .footer__img {
+  border: 1px solid red;
   flex: 0 0 auto;
   margin: auto 0px;
 }
