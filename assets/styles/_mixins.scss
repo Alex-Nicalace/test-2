@@ -1,3 +1,5 @@
+//@use "sass:math";
+
 @import "variables";
 
 //это первый проект из без очертания блоков тяжело ....
@@ -71,4 +73,30 @@
     margin-bottom: 80px;
     text-align: center;
   }
+}
+
+//функция избавляется от едениц измерения
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+//функция переводит px to rem
+@function px-to-rem($values){
+  $max: length($values);
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValue: $value / strip-unit($html-font-size);
+
+    $remValues: #{$remValues + $remValue}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  @return $remValues;
 }

@@ -131,9 +131,10 @@ body {
 
   &__creative {
     @include showBorderBlock(1px, solid, white);
-    padding: 250px 0 0;
+    padding: px-to-rem(250px 0px 0px);
     text-align: center;
-    font-size: 143px;
+    //font-size: 143px;
+    font-size: px-to-rem(143px);
     font-family: "Gotham";
     color: rgb(245, 245, 245);
     font-weight: bold;
@@ -235,13 +236,32 @@ body {
   &__items {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   &__item {
     @include showBorderBlock(1px, solid, red);
-    flex: 1 1 750px;
-    padding: 70px 0 0 0;
+    flex: 1 1 px-to-rem(796px);
+    //padding: 70px 0 0 0;
+  }
+
+  &__item_1 {
+    @include showBorderBlock(1px, solid, green);
+    padding: px-to-rem(70px 110px 0 ($pageWidth - $containerWidth)/2);
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+  }
+
+  &__item_4 {
+    @include showBorderBlock(1px, solid, green);
+    padding: px-to-rem(70px ($pageWidth - $containerWidth)/2 0 110px);
+    background-color: #f3f3f3;
+    color: rgb(34, 34, 34);
+  }
+
+  &__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 
   &__item-date {
@@ -278,26 +298,6 @@ body {
     }
   }
 
-  &__item-img {
-    flex: 0 0 750px;
-  }
-
-  &__item_1 {
-    @include showBorderBlock(1px, solid, green);
-    padding-left: ($pageWidth - $containerWidth)/2;
-    padding-right: 110px;
-    background-color: #222222;
-    color: rgb(255, 255, 255);
-  }
-
-  &__item_4 {
-    @include showBorderBlock(1px, solid, green);
-    padding-left: 110px;
-    padding-right: ($pageWidth - $containerWidth)/2;
-    background-color: #f3f3f3;
-    color: rgb(34, 34, 34);
-  }
-
 }
 
 .Ch {
@@ -327,11 +327,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -12px;
   }
 
   &__column {
     @include showBorderBlock(1px, solid, green);
-    flex: 0 1 280px;
+    flex: 1 1 px-to-rem(270px);
+    margin: 0 12px;
+  }
+
+  &__columnImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__columnTitle {
@@ -390,21 +398,27 @@ body {
 }
 
 .key {
-  @include showBorderBlock(1px, solid, red);
+  //@include showBorderBlock(1px, solid, red);
   background: url("../img/bg/bg.jpg") 0 0/cover no-repeat;
   font-family: "Gotham";
   color: white;
 
   &__row {
-    @include showBorderBlock(1px, solid, red);
+    //@include showBorderBlock(1px, solid, red);
     display: flex;
+    flex-wrap: wrap;
     padding: 100px 0px;
   }
 
-  &__textArea {
+  &__column{
     @include showBorderBlock(1px, solid, red);
+    flex: 1 1 px-to-rem(500px);
+  }
+
+  &__column_textArea {
+
     padding: 150px 105px 150px 5px;
-    flex: 0 0 $containerWidth/2;
+
   }
 
   &__textAreaTitle {
@@ -441,10 +455,8 @@ body {
     }
   }
 
-  &__smart {
-    @include showBorderBlock(1px, solid, red);
+  &__column_smart {
     text-align: center;
-    flex: 0 0 $containerWidth/2;
   }
 }
 

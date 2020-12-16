@@ -5497,9 +5497,9 @@ body {
 }
 .header__creative {
   border: 1px solid white;
-  padding: 250px 0 0;
+  padding: 17.8571428571rem 0rem 0rem;
   text-align: center;
-  font-size: 143px;
+  font-size: 10.2142857143rem;
   font-family: "Gotham";
   color: whitesmoke;
   font-weight: bold;
@@ -5611,8 +5611,24 @@ body {
 }
 .news__item {
   border: 1px solid red;
-  flex: 1 1 750px;
-  padding: 70px 0 0 0;
+  flex: 1 1 56.8571428571rem;
+}
+.news__item_1 {
+  border: 1px solid green;
+  padding: 5rem 7.8571428571rem 0rem 15.3571428571rem;
+  background-color: #222222;
+  color: white;
+}
+.news__item_4 {
+  border: 1px solid green;
+  padding: 5rem 15.3571428571rem 0rem 7.8571428571rem;
+  background-color: #f3f3f3;
+  color: #222222;
+}
+.news__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .news__item-date {
   font-size: 13px;
@@ -5639,23 +5655,6 @@ body {
 }
 .news__item-text p:last-child {
   padding-bottom: 0px;
-}
-.news__item-img {
-  flex: 0 0 750px;
-}
-.news__item_1 {
-  border: 1px solid green;
-  padding-left: 215px;
-  padding-right: 110px;
-  background-color: #222222;
-  color: white;
-}
-.news__item_4 {
-  border: 1px solid green;
-  padding-left: 110px;
-  padding-right: 215px;
-  background-color: #f3f3f3;
-  color: #222222;
 }
 
 .Ch {
@@ -5707,10 +5706,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 -12px;
 }
 .blog__column {
   border: 1px solid green;
-  flex: 0 1 280px;
+  flex: 1 1 19.2857142857rem;
+  margin: 0 12px;
+}
+.blog__columnImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .blog__columnTitle {
   border: 1px solid green;
@@ -5760,20 +5766,21 @@ body {
 }
 
 .key {
-  border: 1px solid red;
   background: url("../img/bg/bg.jpg") 0 0/cover no-repeat;
   font-family: "Gotham";
   color: white;
 }
 .key__row {
-  border: 1px solid red;
   display: flex;
+  flex-wrap: wrap;
   padding: 100px 0px;
 }
-.key__textArea {
+.key__column {
   border: 1px solid red;
+  flex: 1 1 35.7142857143rem;
+}
+.key__column_textArea {
   padding: 150px 105px 150px 5px;
-  flex: 0 0 585px;
 }
 .key__textAreaTitle {
   border: 1px solid green;
@@ -5805,10 +5812,8 @@ body {
 .key__textAreaLabel:nth-child(5) {
   width: 530px;
 }
-.key__smart {
-  border: 1px solid red;
+.key__column_smart {
   text-align: center;
-  flex: 0 0 585px;
 }
 
 .team {
