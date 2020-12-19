@@ -5429,14 +5429,26 @@ body {
   background: url("../img/header/background/desktop.jpg") 0 0/cover no-repeat;
   height: 62.8571428571rem;
 }
+.header__menu {
+  display: flex;
+  flex: 1 1 auto;
+}
+.header__burger {
+  display: none;
+}
 .header__underLine {
   border-bottom: 2px solid #3b3a38;
 }
 .header__row {
   display: flex;
 }
+@media (max-width: 768px) {
+  .header__row {
+    align-items: center;
+  }
+}
 .header__logo {
-  padding: 2.5714285714rem 0rem 0rem 0.7142857143rem;
+  padding: 2.5714285714rem 0rem 2.5714285714rem 0.7142857143rem;
   width: 6.0714285714rem;
   background: url("../img/header/logo/Rectangle9copy.jpg") 0rem 1.5rem/4.7857142857rem 4.7857142857rem no-repeat, url("../img/header/logo/Rectangle9.png") 0.8571428571rem 2.1428571429rem/4.7857142857rem 4.7857142857rem no-repeat;
   font-size: 2.7392142857rem;
@@ -5473,7 +5485,7 @@ body {
 }
 .header__socialIcon {
   padding: 46px 0;
-  width: 10.3571428571rem;
+  flex: 0 0 10.3571428571rem;
 }
 .header__socialIconList {
   display: flex;
@@ -5527,6 +5539,78 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   margin: 0px auto;
+}
+@media (max-width: 768px) {
+  .header__row {
+    justify-content: space-between;
+    height: 60px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 38px;
+    height: 28px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 13px;
+  }
+  .header__burger:before, .header__burger:after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__nav {
+    margin-left: 0;
+  }
+  .header__navList {
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+  }
+  .header__navList li {
+    padding: 0px 0px 15px 0px;
+  }
+  .header__navList a {
+    padding: 0px;
+    color: white;
+    font-size: 30px;
+  }
+  .header__socialIcon {
+    padding: 0;
+    flex: 0 0 auto;
+  }
+  .header__socialIconList {
+    justify-content: center;
+    font-size: 30px;
+  }
+  .header__socialIconList li {
+    padding: 0 15px;
+  }
 }
 
 .aboutAgency {

@@ -17,7 +17,7 @@
 
 @mixin posLogoHeader($x, $y) {
   $y: $y - 25;
-  padding: px-to-rem($y+15 0px 0px $x+10);
+  padding: px-to-rem($y+15 0px $y+15 $x+10);
   width: px-to-rem(85px);
   background: url('../img/header/logo/Rectangle9copy.jpg') px-to-rem($x $y)/px-to-rem(67px 67px) no-repeat, url('../img/header/logo/Rectangle9.png') px-to-rem($x+12 $y+9)/px-to-rem(67px 67px) no-repeat;
   //text-align: center;

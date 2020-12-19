@@ -47,24 +47,23 @@ body {
 //}
 
 @media (max-width: 960px) {
-  html{
+  html {
     font-size: 11px;
   }
 }
 
 
 @media (max-width: 768px) {
-  html{
+  html {
     font-size: 8px;
   }
 }
 
 @media (max-width: 576px) {
-  html{
+  html {
     font-size: 5px;
   }
 }
-
 
 
 .header {
@@ -72,18 +71,32 @@ body {
   @include showBorderBlock(1px, solid, red);
   height: px-to-rem(880px);
 
+  &__menu {
+    @include showBorderBlock(1px, solid, white);
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  &__burger {
+    display: none;
+
+  }
+
   &__underLine {
     border-bottom: 2px solid #3b3a38;
   }
 
   &__row {
     display: flex;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
     //height: 116px;
   }
 
   &__logo {
     @include posLogoHeader(0px, $HeaderPaddingTop);
-    @include showBorderBlock(1px, solid, red)
+    @include showBorderBlock(1px, solid, red);
   }
 
   &__nav {
@@ -102,6 +115,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-around;
+
     li {
       @include showBorderBlock(1px, solid, green);
       padding: px_to-rem($HeaderPaddingTop 0);
@@ -125,9 +139,9 @@ body {
   }
 
   &__socialIcon {
-    @include showBorderBlock(1px, solid, red);
+    @include showBorderBlock(1px, solid, green);
     padding: $HeaderPaddingTop 0;
-    width: px-to-rem(145px);
+    flex: 0 0 px-to-rem(145px);
   }
 
   &__socialIconList {
@@ -198,6 +212,90 @@ body {
     @include scrollBtn(px-to-rem(60px));
     margin: 0px auto; //такое сочетание дает оцентровку
   }
+
+  @media (max-width: 768px) {
+    &__row {
+      justify-content: space-between;
+      height: 60px
+    }
+
+    &__burger {
+      display: block;
+      position: relative;
+      width: $widthBurger;
+      height: $widthBurger - 10;
+      @include showBorderBlock(1px, solid, red);
+    }
+    &__burger span {
+      position: absolute;
+      background-color: white;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: ($widthBurger - 10)/2 - 1;
+    }
+    &__burger:before,
+    &__burger:after {
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+    &__burger:before {
+      top: 0;
+    }
+    &__burger:after {
+      bottom: 0;
+    }
+
+    &__menu {
+      //display: block;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      left: 0;
+      background-color: rgb(0, 0, 0, 0.6);
+    }
+    &__menu{display: none}
+    &__nav {
+      margin-left: 0;
+    }
+    &__navList {
+      //display: block;
+      flex-direction: column;
+      //text-align: right;
+      text-align: center;
+      line-height: 1;
+
+      li {
+        padding: 0px 0px 15px 0px;
+      }
+
+      a {
+        padding: 0px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+      }
+    }
+
+    &__socialIcon {
+      padding: 0;
+      flex: 0 0 auto;
+    }
+    &__socialIconList {
+      justify-content: center;
+      font-size: 30px;
+
+      li {
+        padding: 0 15px;
+      }
+    }
+
+  }
+
 }
 
 .aboutAgency {
@@ -276,7 +374,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  &__item img{
+  &__item img {
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -355,7 +453,7 @@ body {
     margin: 0 12px;
   }
 
-  &__columnImg img{
+  &__columnImg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -429,7 +527,7 @@ body {
     padding: px-to-rem(100px 0px);
   }
 
-  &__column{
+  &__column {
     @include showBorderBlock(1px, solid, red);
     flex: 1 1 px-to-rem(500px);
   }
@@ -471,7 +569,6 @@ body {
     height: 40px;
     padding-left: 10px;
   }
-
 
 
   @for $i from 3 through 5 {
