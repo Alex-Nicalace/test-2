@@ -218,7 +218,6 @@ body {
       justify-content: space-between;
       height: 60px
     }
-
     &__burger {
       display: block;
       position: relative;
@@ -249,24 +248,30 @@ body {
     &__burger:after {
       bottom: 0;
     }
-
-    &__menu {
-      //display: block;
+    &__burger:hover{
+      .header__burgerMenu{
+        display: block;
+      }
+    }
+    &__burgerMenu {
+      @include showBorderBlock(3px, solid, white);
+      display: none;
       flex-direction: column;
       position: absolute;
-      top: 60px;
-      width: 100%;
-      left: 0;
+      top: 25px;
+      //width: 150px;
+      left: -200px;
+      //left: 0;
       background-color: rgb(0, 0, 0, 0.6);
+      flex: 1 1 auto;
     }
     &__menu{display: none}
     &__nav {
       margin-left: 0;
+      //flex: 1 1 auto;
     }
     &__navList {
-      //display: block;
       flex-direction: column;
-      //text-align: right;
       text-align: center;
       line-height: 1;
 
@@ -277,10 +282,9 @@ body {
       a {
         padding: 0px;
         color: rgb(255, 255, 255);
-        font-size: 30px;
+        font-size: 25px;
       }
     }
-
     &__socialIcon {
       padding: 0;
       flex: 0 0 auto;
@@ -293,7 +297,6 @@ body {
         padding: 0 15px;
       }
     }
-
   }
 
 }
