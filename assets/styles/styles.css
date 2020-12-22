@@ -5558,8 +5558,10 @@ body {
     width: 100%;
     height: 2px;
     top: 13px;
+    transition: all 0.3s ease 0s;
   }
   .header__burger:before, .header__burger:after {
+    transition: all 0.3s ease 0s;
     content: "";
     background-color: white;
     position: absolute;
@@ -5575,6 +5577,17 @@ body {
   }
   .header__burger:hover .header__burgerMenu {
     display: block;
+  }
+  .header__burger:hover:before {
+    transform: rotate(45deg);
+    top: 13px;
+  }
+  .header__burger:hover:after {
+    transform: rotate(-45deg);
+    bottom: 13px;
+  }
+  .header__burger:hover span {
+    transform: scale(0);
   }
   .header__burgerMenu {
     display: none;

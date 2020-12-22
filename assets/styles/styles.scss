@@ -232,9 +232,11 @@ body {
       width: 100%;
       height: 2px;
       top: ($widthBurger - 10)/2 - 1;
+      transition: all 0.3s ease 0s;
     }
     &__burger:before,
     &__burger:after {
+      transition: all 0.3s ease 0s;
       content: '';
       background-color: white;
       position: absolute;
@@ -248,9 +250,21 @@ body {
     &__burger:after {
       bottom: 0;
     }
-    &__burger:hover{
-      .header__burgerMenu{
+    &__burger:hover {
+      .header__burgerMenu {
         display: block;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+        top: $shiftBurgerCross;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        bottom: $shiftBurgerCross;
+      }
+      span{
+        transform: scale(0);
       }
     }
     &__burgerMenu {
@@ -265,7 +279,9 @@ body {
       background-color: rgb(0, 0, 0, 0.6);
       flex: 1 1 auto;
     }
-    &__menu{display: none}
+    &__menu {
+      display: none
+    }
     &__nav {
       margin-left: 0;
       //flex: 1 1 auto;
