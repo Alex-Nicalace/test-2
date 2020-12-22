@@ -5575,9 +5575,6 @@ body {
   .header__burger:after {
     bottom: 0;
   }
-  .header__burger:hover .header__burgerMenu {
-    display: block;
-  }
   .header__burger:hover:before {
     transform: rotate(45deg);
     top: 13px;
@@ -5589,14 +5586,19 @@ body {
   .header__burger:hover span {
     transform: scale(0);
   }
+  .header__burger:hover .header__burgerMenu {
+    height: 280px;
+  }
   .header__burgerMenu {
-    display: none;
     flex-direction: column;
     position: absolute;
-    top: 30px;
+    top: 28px;
+    height: 0;
+    overflow: hidden;
     left: -190px;
     background-color: rgba(0, 0, 0, 0.6);
     flex: 1 1 auto;
+    transition: all 1s ease 0s;
   }
   .header__menu {
     display: none;

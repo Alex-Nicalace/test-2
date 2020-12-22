@@ -251,10 +251,6 @@ body {
       bottom: 0;
     }
     &__burger:hover {
-      .header__burgerMenu {
-        display: block;
-      }
-
       &:before {
         transform: rotate(45deg);
         top: $shiftBurgerCross;
@@ -266,18 +262,28 @@ body {
       span{
         transform: scale(0);
       }
+      .header__burgerMenu {
+        //display: block;
+        //visibility: visible;
+        //transition: all 1s ease 0s;
+        height: 280px;
+      }
     }
     &__burgerMenu {
-      @include showBorderBlock(3px, solid, white);
-      display: none;
+      @include showBorderBlock(1px, solid, white);
+      //display: none;
+      //visibility: hidden;
       flex-direction: column;
       position: absolute;
-      top: 30px;
+      top: $widthBurger - 10;
+      height: 0;
+      overflow: hidden;
       //width: 150px;
       left: -190px;
       //left: 0;
       background-color: rgb(0, 0, 0, 0.6);
       flex: 1 1 auto;
+      transition: all 1s ease 0s;
     }
     &__menu {
       display: none
