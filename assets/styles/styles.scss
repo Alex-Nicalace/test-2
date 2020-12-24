@@ -28,24 +28,6 @@ body {
   @include showBorderBlock(1px, solid, red);
 }
 
-//@media (max-width: 1200px) {
-//  .container {
-//    max-width: 970px;
-//  }
-//}
-//
-//@media (max-width: 992px) {
-//  .container {
-//    max-width: 750px;
-//  }
-//}
-//
-//@media (max-width: 767px) {
-//  .container {
-//    max-width: 750px;
-//  }
-//}
-
 @media (max-width: 960px) {
   html {
     font-size: 11px;
@@ -124,7 +106,7 @@ body {
 
     a {
       @include showBorderBlock(1px, solid, red);
-      padding: $HeaderPaddingTop 0px;
+      padding: px_to-rem($HeaderPaddingTop 0px);
       color: rgb(255, 255, 255);
       //transition-duration: 0.5s;
     }
@@ -140,7 +122,7 @@ body {
 
   &__socialIcon {
     @include showBorderBlock(1px, solid, green);
-    padding: $HeaderPaddingTop 0;
+    padding: px_to-rem($HeaderPaddingTop 0);
     flex: 0 0 px-to-rem(145px);
   }
 
@@ -267,6 +249,7 @@ body {
         //visibility: visible;
         //transition: all 1s ease 0s;
         height: 280px;
+        overflow: auto;
       }
     }
     &__burgerMenu {
@@ -727,12 +710,19 @@ body {
   }
 }
 
+.map{
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 
 .footer {
   @include showBorderBlock(1px, solid, green);
   background-color: #222222;
   color: white;
-
 
   &__row {
     @include showBorderBlock(1px, solid, white);
