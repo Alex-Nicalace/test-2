@@ -205,7 +205,7 @@ body {
       position: relative;
       width: $widthBurger;
       height: $widthBurger - 10;
-      @include showBorderBlock(1px, solid, red);
+      @include showBorderBlock(1px, solid, green);
     }
     &__burger span {
       position: absolute;
@@ -253,12 +253,12 @@ body {
       }
     }
     &__burgerMenu {
-      @include showBorderBlock(1px, solid, white);
+      @include showBorderBlock(1px, solid, red);
       //display: none;
       //visibility: hidden;
       flex-direction: column;
       position: absolute;
-      top: $widthBurger - 10;
+      top: $widthBurger;
       height: 0;
       overflow: hidden;
       //width: 150px;
@@ -317,14 +317,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0px -15px;
+    justify-content: center;
   }
 
   &__column {
     @include showBorderBlock(1px, solid, red);
-    flex: 1 1 260px;
+    flex: 1 1 268px;
+    @media (max-width: 1167px) and (min-width: 869px) {
+      flex: 1 1 400px;
+    }
     text-align: center;
     margin: 0 15px;
+    padding-top: 30px;
+    //max-width: 410px;
   }
+
 
   &__columnIcon {
     @include showBorderBlock(1px, solid, yellow);
@@ -360,24 +367,30 @@ body {
   &__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
     @include showBorderBlock(1px, solid, red);
-    flex: 1 1 px-to-rem(796px);
+    //flex: 0 1 px-to-rem(796px);
+    flex: 0 1 796px;
+    @media (max-width: 1593px) and (min-width: 1157px) {
+      flex: 0 1 50%;;
+    }
+    //flex: 0 1 45%;
     //padding: 70px 0 0 0;
   }
 
   &__item_1 {
     @include showBorderBlock(1px, solid, green);
-    padding: px-to-rem(70px 110px 0 ($pageWidth - $containerWidth)/2);
+    padding: px-to-rem(70px 110px 70px ($pageWidth - $containerWidth)/2);
     background-color: #222222;
     color: rgb(255, 255, 255);
   }
 
   &__item_4 {
     @include showBorderBlock(1px, solid, green);
-    padding: px-to-rem(70px ($pageWidth - $containerWidth)/2 0 110px);
+    padding: px-to-rem(70px ($pageWidth - $containerWidth)/2 70px 110px);
     background-color: #f3f3f3;
     color: rgb(34, 34, 34);
   }
@@ -385,7 +398,7 @@ body {
   &__item img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
 
   &__item-date {
@@ -451,19 +464,28 @@ body {
     @include showBorderBlock(1px, solid, green);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: center;
     margin: 0 -12px;
+    @media (max-width: 1163px) and (min-width: 868px) {
+      margin: 0 12%;
+    }
   }
 
   &__column {
     @include showBorderBlock(1px, solid, green);
-    flex: 1 1 px-to-rem(270px);
+    //flex: 0 0 px-to-rem(271px);
+    flex: 0 0 271px;
+    //@media (max-width: 1160px) and (min-width: 869px) {
+    //  flex: 1 1 400px;
+    //}
     margin: 0 12px;
+    padding-top: 30px;
   }
 
   &__columnImg img {
-    height: 100%;
-    width: 100%;
+    //height: 100%;
+    //width: 100%;
     object-fit: cover;
   }
 
@@ -601,17 +623,26 @@ body {
   &__row {
     @include showBorderBlock(1px, solid, red);
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 -13px;
+    @media (max-width: 1167px) and (min-width: 861px) {
+      margin: 0 12%;
+    }
   }
 
   &__column {
     @include showBorderBlock(1px, solid, red);
-    //height: 486px;
+    height: 486px;
     //width: 270px;
-    flex: 1 1 px-to-rem(270px);
-    margin: 0 13px;
+    //flex: 1 1 px-to-rem(270px);
+    flex: 0 0 270px;
+    //@media (max-width: 1167px) and (min-width: 869px) {
+    //  flex: 1 1 400px;
+    //}
+    margin: 30px 13px 0px 13px;
+    //padding-top: 30px;
   }
 
   //для каждой колонки накидываю BG
@@ -624,34 +655,40 @@ body {
   &__empItem {
     display: flex;
     flex-direction: column;
-    height: px-to-rem(486px);
+    //height: px-to-rem(486px);
+    //height: 486px;
   }
 
   &__empNull {
-    flex: 1 1 100%;
+    //flex: 1 1 100%;
+    flex: 0 0 360px;
   }
 
   &__emp {
     @include showBorderBlock(1px, solid, red);
     text-align: center;
     background-color: white;
-    width: px-to-rem(215px);
-    height: px-to-rem(125px);
+    //width: px-to-rem(215px);
+    //height: px-to-rem(125px);
+    width: 215px;
+    //height: 125px;
     margin: 0 auto;
     padding-top: 25px;
-    flex: 0 0 auto;
+    flex: 0 0 125px;
     font-weight: bold;
   }
 
   &__name {
-    font-size: px-to-rem(20px);
+    //font-size: px-to-rem(20px);
+    font-size: 20px;
     color: rgb(17, 116, 158);
     text-transform: uppercase;
     line-height: 1.2;
   }
 
   &__post {
-    font-size: px-to-rem(15px);
+    //font-size: px-to-rem(15px);
+    font-size: 15px;
     color: rgb(0, 0, 0);
     line-height: 1.6;
   }
@@ -741,7 +778,7 @@ body {
 
   &__null {
     @include showBorderBlock(1px, solid, red);
-    flex: 1 0 33%;
+    flex: 1 0 auto;
   }
 
   &__img {
